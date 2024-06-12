@@ -1,0 +1,22 @@
+version: "3.8"
+
+volumes:
+  sqldata:
+
+services:
+  db:
+    container_name: sqlserverapifilm
+    image: "mcr.microsoft.com/mssql/server"
+    environment:
+        SA_PASSWORD: "P@ssw0rd!"
+        ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqldata:/var/opt/mssql  
+  sonar:
+    container_name: sonarqubedotnetexample
+    image: sonarqube:latest
+    ports:
+      - "9000:9000"
+      - "9092:9092"

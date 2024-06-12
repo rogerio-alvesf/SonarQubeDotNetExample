@@ -1,0 +1,5 @@
+﻿C:\Projects\SonarQubeDotNetExample\Film.Infra\Data\Context.cs
+C:\Projects\SonarQubeDotNetExample\Film.Infra\Migrations\20240612001355_InitialMigration.cs
+C:\Projects\SonarQubeDotNetExample\Film.Infra\Migrations\20240612001355_InitialMigration.Designer.cs
+C:\Projects\SonarQubeDotNetExample\Film.Infra\Migrations\ContextModelSnapshot.cs
+C:\Projects\SonarQubeDotNetExample\Film.Infra\Repositories\FilmRepository.cs

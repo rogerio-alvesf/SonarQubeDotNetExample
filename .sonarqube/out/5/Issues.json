@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Compilador do Microsoft (R) Visual C#",
+        "version": "4.3.0.0",
+        "fileVersion": "4.3.1-3.22526.13 (41a5af9d)",
+        "semanticVersion": "4.3.0",
+        "language": "pt-BR"
+      },
+      "results": [
+        {
+          "ruleId": "CS1998",
+          "level": "warning",
+          "message": "Este método assíncrono não possui operadores 'await' e será executado de modo síncrono. É recomendável o uso do operador 'await' para aguardar chamadas à API desbloqueadas ou do operador 'await Task.Run(...)' para realizar um trabalho associado à CPU em um thread em segundo plano.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Projects/SonarQubeDotNetExample/Film.Infra/Repositories/FilmRepository.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 36,
+                  "endLine": 20,
+                  "endColumn": 43
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CS1998": {
+          "id": "CS1998",
+          "shortDescription": "O método assíncrono não possui operadores 'await' e será executado de forma síncrona",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS1998)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
