@@ -15,12 +15,15 @@ obj/
 # Diretórios de dependências
 packages/
 node_modules/
+Film.Infra/Migrations/
+Film.Test/TestResults/
 
 # Arquivos de configuração
 *.user
 *.vscode
 *.suo
 *.sln.docstates
+*.sonarqube
 
 # Logs e caches
 *.log

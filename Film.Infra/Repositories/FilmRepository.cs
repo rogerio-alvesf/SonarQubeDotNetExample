@@ -18,15 +18,16 @@ namespace Film.Infra.Repositories
         }
 
         public async Task<FilmDto> GetById(Guid id)
-        {
-            return _context.Films.Find(id);
-        }
+            => await _context.Films.FindAsync(id);
 
         public async Task Delete(Guid id)
         {
-            var book = _context.Films.Find(id);
-            _context.Films.Remove(book);
-            await _context.SaveChangesAsync();
+            var film = await _context.Films.FindAsync(id);
+            if (film != null)
+            {
+                 _context.Films.Remove(film);
+                await _context.SaveChangesAsync();
+            }
         }
 
         public async Task Update(FilmDto film)
