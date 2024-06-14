@@ -1,0 +1,22 @@
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: '5.0.416'
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build
+      run: dotnet build FilmApi\FilmApi.csproj --configuration Release --no-restore
+
+    - name: Test
+      run: dotnet test Film.Test/Film.Test.csproj --no-build --configuration Release --verbosity normal
