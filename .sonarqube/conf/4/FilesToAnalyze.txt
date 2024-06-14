@@ -1,1 +1,0 @@
-﻿C:\Projects\SonarQubeDotNetExample\Film.Domain\Entities\FilmDto.cs

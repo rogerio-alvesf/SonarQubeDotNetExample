@@ -1,1 +1,0 @@
-Roslyn version: 4.3.0.0Language version: CSharp9!Concurrent execution: enabled‚~File 'C:\Projects\SonarQubeDotNetExample\Film.Domain\obj\Debug\net5.0\Film.Domain.AssemblyInfo.cs' was recognized as generated–‘File 'C:\Projects\SonarQubeDotNetExample\Film.Domain\obj\Debug\net5.0\.NETCoreApp,Version=v5.0.AssemblyAttributes.cs' was recognized as generated

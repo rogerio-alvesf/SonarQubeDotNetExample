@@ -1,1 +1,0 @@
-C:\Projects\SonarQubeDotNetExample\.sonarqube\out\2
