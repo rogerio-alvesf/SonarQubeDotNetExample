@@ -2,9 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
-	<CheckEolTargetFramework>false</CheckEolTargetFramework>
     <UserSecretsId>cab0adb3-d41a-4d98-8c18-bdf1aed3a38e</UserSecretsId>
-    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
   </PropertyGroup>
 
   <ItemGroup>
