@@ -2,7 +2,7 @@
 
 ## Como preparar ambiente:
 
-1. **Na raiz do projeto, execute docker-compose up -d.**
+1. **Em .\Docker, execute docker-compose up -d.**
 
    Este comando inicia os containers definidos no arquivo `docker-compose.yml` no modo detached (`-d`), ou seja, em segundo plano, sem bloquear o terminal atual.
 
